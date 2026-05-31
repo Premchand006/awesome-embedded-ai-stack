@@ -8,4 +8,5 @@
 # ^https://twitter\.com/.*
 # ^https://x\.com/.*
 # ^https://www\.linkedin\.com/.*
+^https://(www\.)?conventionalcommits\.org/.*
 ^https://doc\.kneron\.com/.*
