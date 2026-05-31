@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: 📖 Read the contributing guide first
-    url: https://github.com/Premchand006/physical-ai-edge-stack/blob/main/CONTRIBUTING.md
+    url: https://github.com/Premchand006/awesome-physical-ai/blob/main/CONTRIBUTING.md
     about: The quality bar and submission process for resources and projects.
   - name: 🔁 Report a rename / deprecation
-    url: https://github.com/Premchand006/physical-ai-edge-stack/blob/main/renames-and-deprecations.md
+    url: https://github.com/Premchand006/awesome-physical-ai/blob/main/renames-and-deprecations.md
     about: Found a product/SDK that changed names or was discontinued? Open a normal issue and reference this page.

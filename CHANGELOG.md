@@ -18,5 +18,5 @@ This project loosely follows [Keep a Changelog](https://keepachangelog.com/).
 - CI: `awesome-lint` workflow and `lychee` link-check workflow (PR + daily cron).
 - Issue/PR templates and CONTRIBUTING with a strict resource quality bar.
 
-[Unreleased]: https://github.com/Premchand006/physical-ai-edge-stack/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/Premchand006/physical-ai-edge-stack/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Premchand006/awesome-physical-ai/commits/main
+[0.1.0]: https://github.com/Premchand006/awesome-physical-ai/releases
