@@ -1,4 +1,4 @@
-# Contributing to awesome-physical-ai
+# Contributing to awesome-physical-ai-and-edge-ai-stack
 
 Thanks for helping build a genuinely useful, vendor-neutral hub for Physical AI / Edge AI. This guide explains **what we accept**, **the quality bar**, and **how to submit**.
 
