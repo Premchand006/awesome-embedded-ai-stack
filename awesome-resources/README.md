@@ -53,7 +53,6 @@ Only currently-maintained, authoritative, or high-signal resources are listed. S
 - [JetsonHacks (YouTube)](https://www.youtube.com/@JetsonHacks) - Practical Jetson tutorials and JetPack walkthroughs.
 - [NVIDIA Developer (YouTube)](https://www.youtube.com/@NVIDIADeveloper) - TensorRT, DeepStream, Isaac, Holoscan sessions.
 - [Edge Impulse (YouTube)](https://www.youtube.com/@EdgeImpulse) - TinyML and embedded ML from data to deployment.
-- [Intel Software (YouTube)](https://www.youtube.com/@IntelSoftware) - OpenVINO tutorials and optimization talks.
 - [NVIDIA Jetson AI Lab](https://www.jetson-ai-lab.com) - Hands-on generative-AI-on-Jetson tutorials.
 
 ## Research & landscape
