@@ -1,0 +1,8 @@
+{
+  // Relaxed markdownlint config compatible with awesome-lint conventions.
+  "default": true,
+  "MD013": false,   // line length: allow long lines (tables, links)
+  "MD033": false,   // allow inline HTML (badges, <details>, <div align>)
+  "MD041": false,   // first line need not be a top-level heading (badges block)
+  "MD024": { "siblings_only": true } // allow repeated headings across sections
+}

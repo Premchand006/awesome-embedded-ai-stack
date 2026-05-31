@@ -1,0 +1,10 @@
+# URLs (regex, one per line) that the link checker should skip.
+
+# Placeholder links: these contain `Premchand006` and will 404 until you
+# replace it with your real GitHub handle and push the repo. AFTER you do the
+# find-and-replace, DELETE the next line so these links get checked for real.
+
+# Add flaky-but-valid hosts here if CI ever flags them, e.g.:
+# ^https://twitter\.com/.*
+# ^https://x\.com/.*
+# ^https://www\.linkedin\.com/.*

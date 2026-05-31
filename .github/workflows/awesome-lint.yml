@@ -1,0 +1,31 @@
+name: Awesome Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'awesome-resources/**'
+      - '.github/workflows/awesome-lint.yml'
+  pull_request:
+    paths:
+      - 'awesome-resources/**'
+      - '.github/workflows/awesome-lint.yml'
+  workflow_dispatch:
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # awesome-lint enforces the strict Awesome list conventions
+      # (title/badge, Contents TOC, "- [name](url) - description.", etc.)
+      # against the curated list. It is advisory here so a single style
+      # nit doesn't block contributions; run it locally and fix warnings
+      # before submitting the list to the Awesome index (https://awesome.re):
+      #   npx awesome-lint awesome-resources/README.md
+      - name: Run awesome-lint on the curated list
+        continue-on-error: true
+        run: npx awesome-lint awesome-resources/README.md
