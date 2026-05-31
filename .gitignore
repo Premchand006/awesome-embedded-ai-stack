@@ -1,0 +1,18 @@
+# Link checker cache
+.lycheecache
+
+# Node (awesome-lint / markdownlint)
+node_modules/
+package-lock.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Build artifacts (if you later render the site)
+_site/
+.cache/
+dist/
