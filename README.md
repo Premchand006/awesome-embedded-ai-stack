@@ -17,10 +17,10 @@
 [![Content: CC BY 4.0](https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 <br/>
-[![Link Check](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-physical-ai-and-edge-ai-stack/link-check.yml?label=links)](.github/workflows/link-check.yml)
-[![Awesome Lint](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-physical-ai-and-edge-ai-stack/awesome-lint.yml?label=awesome-lint)](.github/workflows/awesome-lint.yml)
-[![Last Commit](https://img.shields.io/github/last-commit/Premchand006/awesome-physical-ai-and-edge-ai-stack)](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/commits/main)
-[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-physical-ai-and-edge-ai-stack?style=social)](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/stargazers)
+[![Link Check](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-embedded-ai-stack/link-check.yml?label=links)](.github/workflows/link-check.yml)
+[![Awesome Lint](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-embedded-ai-stack/awesome-lint.yml?label=awesome-lint)](.github/workflows/awesome-lint.yml)
+[![Last Commit](https://img.shields.io/github/last-commit/Premchand006/awesome-embedded-ai-stack)](https://github.com/Premchand006/awesome-embedded-ai-stack/commits/main)
+[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-embedded-ai-stack?style=social)](https://github.com/Premchand006/awesome-embedded-ai-stack/stargazers)
 
 </div>
 
@@ -183,7 +183,7 @@ Full matrix and per-runtime pages in **[runtimes-and-sdks/](runtimes-and-sdks/)*
 *What's in the box, and where to go next.*
 
 ```text
-awesome-physical-ai-and-edge-ai-stack/
+awesome-embedded-ai-stack/
 ├── getting-started/            # Day 0 → Day 7: choose a board, set it up
 ├── concepts-and-definitions/   # Cloud vs Edge vs Embedded; Physical AI; latency
 ├── hardware-landscape/         # Jetson, Pi+Hailo, RK3588, OpenVINO, AMD, discrete NPUs
@@ -237,7 +237,7 @@ This hub is only as good as the community keeps it. **Good first contributions:*
 
 **Quality standards:** authoritative or high-signal sources, currently maintained, specific links (no trailing slash), and a one-line description of *why* each resource is worth a click.
 
-Look for [`good first issue`](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and [`help wanted`](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
+Look for [`good first issue`](https://github.com/Premchand006/awesome-embedded-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and [`help wanted`](https://github.com/Premchand006/awesome-embedded-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
 ## 📞 Support and Community
 
