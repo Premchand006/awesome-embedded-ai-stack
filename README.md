@@ -7,13 +7,12 @@
 
 <div align="center">
 
-# Physical AI & Edge AI Stack
+# Physical AI & Edge AI Stack [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ### From sensor → inference → actuation — across Jetson, Raspberry Pi + Hailo, RK3588, OpenVINO, ONNX Runtime, LiteRT, ROS 2, and more.
 
-A cross-vendor, opinionated knowledge hub for **Physical AI, Edge AI, and Embedded AI**: a learning roadmap, a hardware & runtime landscape, reproducible starter projects, and a curated awesome list — kept current, in one place.
+*A cross-vendor, opinionated knowledge hub for **Physical AI, Edge AI, and Embedded AI** — covering **10+ hardware platforms**, **6+ inference runtimes**, a **Phase 0→7 learning roadmap**, **reproducible starter projects**, and a **curated awesome list**. Everything is verified current to 2026, with the **2024–2026 renames and deprecations** tracked so you never follow a dead-end tutorial.*
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Content: CC BY 4.0](https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -30,7 +29,69 @@ A cross-vendor, opinionated knowledge hub for **Physical AI, Edge AI, and Embedd
 > [!NOTE]
 > **The edge-AI landscape moved a lot in 2024–2026.** This repo tracks the changes so you don't have to. TensorFlow Lite is now **LiteRT**; Google **Coral / Edge TPU is effectively discontinued**; the Raspberry Pi **AI Kit was replaced by the AI HAT+ / AI HAT+ 2**; **Jetson AGX Thor** shipped; and the current ROS 2 LTS is **Lyrical Luth**. See [**Renames & Deprecations →**](renames-and-deprecations.md) before you buy hardware or pick a runtime.
 
-## Why this exists
+## 📖 Table of Contents
+
+- [🎯 What This Hub Solves](#-what-this-hub-solves)
+- [🧩 What is Physical AI and Edge AI?](#-what-is-physical-ai-and-edge-ai)
+- [🚀 Start Here](#-start-here)
+- [🧭 Learning Roadmap](#-learning-roadmap)
+- [🔌 Hardware at a Glance](#-hardware-at-a-glance)
+- [🧰 Which Runtime Should I Use?](#-which-runtime-should-i-use)
+- [📚 Repository Structure](#-repository-structure)
+- [🔁 Renames and Deprecations](#-renames-and-deprecations)
+- [🤝 Contributing](#-contributing)
+- [📞 Support and Community](#-support-and-community)
+- [🙏 Acknowledgements](#-acknowledgements)
+- [⭐ Support This Project](#-support-this-project)
+- [📄 License](#-license)
+
+> Welcome 👋 — whether you're buying your first accelerator or shipping a multi-sensor robot, this hub gives you a path: pick hardware, pick a runtime, build a pipeline, and follow a roadmap from foundations to Physical AI.
+
+---
+
+## 🎯 What This Hub Solves
+
+*The questions that actually block people starting in edge AI — and exactly where this hub answers them.*
+
+Physical AI and Edge AI knowledge is scattered across vendor docs, blog posts, YouTube, and one-off sample repos — each assuming you've already picked *their* stack. Worse, much of it is now **out of date** (renamed SDKs, discontinued hardware). This hub fixes three things:
+
+### 1. Hardware & runtime selection paralysis
+- **Problem**: "TOPS" marketing numbers don't map to real FPS, memory limits aren't obvious, and it's unclear which runtime works on which chip.
+- **Solution**: one-screen comparison tables plus per-vendor pages with caveats. → [Hardware Landscape](hardware-landscape/) · [Runtimes & SDKs](runtimes-and-sdks/)
+
+### 2. The "model on a bench" → "real pipeline" gap
+- **Problem**: tutorials stop at a single inference call; nobody shows the camera → preprocess → inference → postprocess → action pipeline, or how to build a robot perception graph.
+- **Solution**: pipeline patterns and reproducible projects you can run on hardware you can buy today. → [Edge Pipelines](edge-pipelines/) · [Beginner Quick-Wins](beginner-projects/)
+
+### 3. Following stale, dead-end guides
+- **Problem**: half the tutorials online tell you to buy a Coral or `pip install tflite-runtime` — both effectively dead.
+- **Solution**: a living "what changed" page and a structured learning order. → [Renames & Deprecations](renames-and-deprecations.md) · [Knowledge Roadmap](knowledge-roadmap.md)
+
+**Why care at all?** **Edge AI is roughly a USD 25B market in 2025, projected to reach USD 57–165B by 2030–2035** depending on scope, with computer vision the dominant application and manufacturing the fastest-growing vertical ([sources](industry-landscape/)). You're learning an in-demand skill.
+
+---
+
+## 🧩 What is Physical AI and Edge AI?
+
+*The 60-second mental model before you pick hardware. Full version in [concepts-and-definitions](concepts-and-definitions/).*
+
+- **Cloud AI** — inference in a datacenter. Maximum compute, but higher latency, and data leaves the device.
+- **Edge AI** — inference **on or next to the device** producing the data. Low latency, privacy, bandwidth savings, and it works offline.
+- **Embedded AI / TinyML** — inference on microcontrollers/DSPs in kilobytes of memory and milliwatts of power.
+- **Physical AI** — systems that **perceive, reason about, and act in the physical world** (robots, drones, autonomous machines), increasingly driven by vision-language-action and world-foundation models running at the edge.
+
+### 🗝️ Why on-device inference matters
+
+- **Real-time control** — closed-loop robotics needs deterministic, bounded latency (high-end platforms target multi-sensor fusion in well under ~10 ms).
+- **Privacy** — faces, license plates, and patient or factory data never leave the device.
+- **Bandwidth & cost** — send *insights*, not raw video, to the cloud.
+- **Availability** — it keeps working when the network doesn't.
+
+---
+
+## 🚀 Start Here
+
+*New here? Follow these five steps in order.*
 
 Physical AI and Edge AI knowledge is scattered across vendor docs, blog posts, YouTube, and one-off sample repos — each assuming you've already picked *their* stack. This hub answers the questions that actually block newcomers:
 
@@ -117,7 +178,9 @@ Full matrix and per-runtime pages in **[runtimes-and-sdks/](runtimes-and-sdks/)*
 
 ---
 
-## 📚 Repository structure
+## 📚 Repository Structure
+
+*What's in the box, and where to go next.*
 
 ```text
 awesome-physical-ai-and-edge-ai-stack/
@@ -152,16 +215,59 @@ awesome-physical-ai-and-edge-ai-stack/
 
 ---
 
+## 🔁 Renames and Deprecations
+
+*What changed in 2024–2026 — don't get caught following a stale guide. Full page: [renames-and-deprecations.md](renames-and-deprecations.md).*
+
+| If a guide says… | Today it's… |
+|---|---|
+| "TensorFlow Lite" / `tflite-runtime` | **LiteRT** / `ai-edge-litert` (`.tflite` unchanged) |
+| "buy a Coral USB Accelerator" | **abandoned** — use Hailo instead |
+| "Raspberry Pi AI Kit" | **AI HAT+** or **AI HAT+ 2** |
+| "Jetson Orin Nano = 40 TOPS" | **67 TOPS** ("Super", JetPack 6.2) |
+| "OpenVINO Model Optimizer / Open Model Zoo" | **OVC** + Hugging Face / `optimum-intel` |
+| "ONNX Runtime ArmNN EP" | **removed** (1.26) — use CPU EP (KleidiAI) or QNN |
+| "ROS 2 Foxy/Galactic" | EOL — use **Lyrical Luth** or **Jazzy** (LTS) |
+
+---
+
 ## 🤝 Contributing
 
 This hub is only as good as the community keeps it. **Good first contributions:** add a new quick-win project, fix a broken link, add a board page, or correct a stale spec. The quality bar and step-by-step process are in **[CONTRIBUTING.md](CONTRIBUTING.md)**, and CI will run `awesome-lint` + a link checker on your PR.
 
+**Quality standards:** authoritative or high-signal sources, currently maintained, specific links (no trailing slash), and a one-line description of *why* each resource is worth a click.
+
 Look for [`good first issue`](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) and [`help wanted`](https://github.com/Premchand006/awesome-physical-ai-and-edge-ai-stack/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
+
+## 📞 Support and Community
+
+- 🐛 **Issues** — report a broken link, a stale spec, or a bug via GitHub Issues (templates provided).
+- 💡 **Discussions / PRs** — propose a resource or project; see [CONTRIBUTING.md](CONTRIBUTING.md).
+- 🔁 **Spot something outdated?** — flagging a rename or deprecation is one of the most valuable contributions you can make.
+
+---
+
+## 🙏 Acknowledgements
+
+Structure inspired by the broader [Awesome](https://awesome.re) movement and community knowledge hubs across the Jetson, OpenVINO, Hailo, ROS, and RK3588 ecosystems. All product names and trademarks belong to their respective owners; this is an independent, vendor-neutral resource.
+
+## ⭐ Support This Project
+
+If this hub saves you time, help others find it:
+
+- ⭐ **Star** the repo so more builders discover it.
+- 🔗 **Share** it with someone picking their first edge-AI board.
+- 🤝 **Contribute** a project, a fix, or a freshly verified spec.
 
 ## 📄 License
 
 Code/snippets: **MIT**. Curated prose, tables, and learning materials: **CC BY 4.0**. See [LICENSE](LICENSE).
 
-## 🙏 Acknowledgements
+---
 
-Structure inspired by the broader [Awesome](https://awesome.re) movement and community knowledge hubs across the Jetson, OpenVINO, Hailo, ROS, and RK3588 ecosystems. All product names and trademarks belong to their respective owners; this is an independent, vendor-neutral resource.
+<div align="center">
+
+**Building toward Physical AI — one verified link at a time.**
+*Vendor-neutral • Kept current • Community-curated*
+
+</div>
