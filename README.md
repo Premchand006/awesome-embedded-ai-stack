@@ -2,7 +2,7 @@
 
 # Embodied Intelligence Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/Embedded_ai.jpg"  width="1100" height="500">
+<img src="Embedded-AI.jpg" alt="Embodied Intelligence Guide banner" width="1100" height="500">
 
 
 ### From sensor → inference → actuation — across Jetson, Raspberry Pi + Hailo, RK3588, OpenVINO, ONNX Runtime, LiteRT, ROS 2, and more.
@@ -30,9 +30,9 @@
 - [🎯 What This Hub Solves](#-what-this-hub-solves)
 - [🧩 What is Physical AI and Edge AI?](#-what-is-physical-ai-and-edge-ai)
 - [🚀 Start Here](#-start-here)
-- [🧭 Learning Roadmap](#-learning-roadmap)
+- [🗺️ Visual Roadmap](#️-visual-roadmap-from-zero-to-physical-ai)
 - [🔌 Hardware at a Glance](#-hardware-at-a-glance)
-- [🧰 Which Runtime Should I Use?](#-which-runtime-should-i-use)
+- [🧰 Which Runtime Should I Use?](#️-which-runtime-should-i-use)
 - [📚 Repository Structure](#-repository-structure)
 - [🔁 Renames and Deprecations](#-renames-and-deprecations)
 - [🤝 Contributing](#-contributing)

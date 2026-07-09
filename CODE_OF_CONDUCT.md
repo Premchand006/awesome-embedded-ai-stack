@@ -28,8 +28,10 @@ Examples of unacceptable behavior:
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the project maintainers responsible for enforcement. All complaints
-will be reviewed and investigated promptly and fairly.
+reported to the project maintainers responsible for enforcement by opening a
+confidential report via GitHub (Security > Report a vulnerability) or contacting
+the maintainer at <premchandkorukonda@gmail.com>. All complaints will be reviewed
+and investigated promptly and fairly.
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org),
 version 2.1.
