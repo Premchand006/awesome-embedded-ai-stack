@@ -2,7 +2,7 @@
 
 # Embodied Intelligence Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/Embedded_ai.jpg"  width="1100" height="500">
+<img src="https://github.com/Premchand006/awesome-embedded-ai-stack/blob/main/Embedded-AI.jpg"  width="1100" height="500">
 
 
 ### From sensor → inference → actuation — across Jetson, Raspberry Pi + Hailo, RK3588, OpenVINO, ONNX Runtime, LiteRT, ROS 2, and more.
