@@ -1,17 +1,13 @@
-<!--
-  BEFORE YOU PUBLISH:
-  1. Badges and links are configured for `Premchand006`.
-  2. Replace social-preview image in repo Settings → "Social preview" for nice link unfurls.
-  3. Add the GitHub topics listed in awesome-resources/README.md (Settings → Topics).
--->
-
 <div align="center">
 
-# Physical AI & Edge AI Stack [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Embodied Intelligence Guide [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+<img src="https://github.com/Premchand006/awesome-physical-ai/blob/main/Embedded_ai.jpg"  width="1100" height="500">
+
 
 ### From sensor → inference → actuation — across Jetson, Raspberry Pi + Hailo, RK3588, OpenVINO, ONNX Runtime, LiteRT, ROS 2, and more.
 
-*A cross-vendor, opinionated knowledge hub for **Physical AI, Edge AI, and Embedded AI** — covering **10+ hardware platforms**, **6+ inference runtimes**, a **Phase 0→7 learning roadmap**, **reproducible starter projects**, and a **curated awesome list**. Everything is verified current to 2026, with the **2024–2026 renames and deprecations** tracked so you never follow a dead-end tutorial.*
+*A cross-vendor field guide for **Physical AI, Edge AI, and Embedded AI** — covering **10+ hardware platforms**, **6+ inference runtimes**, a **Phase 0→7 learning roadmap**, **reproducible starter projects**, and a curated resource collection. Everything is verified current to 2026, with the **2024–2026 renames and deprecations** tracked so you never follow a dead-end tutorial.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Content: CC BY 4.0](https://img.shields.io/badge/Content-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -20,7 +16,7 @@
 [![Link Check](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-embedded-ai-stack/link-check.yml?label=links)](.github/workflows/link-check.yml)
 [![Awesome Lint](https://img.shields.io/github/actions/workflow/status/Premchand006/awesome-embedded-ai-stack/awesome-lint.yml?label=awesome-lint)](.github/workflows/awesome-lint.yml)
 [![Last Commit](https://img.shields.io/github/last-commit/Premchand006/awesome-embedded-ai-stack)](https://github.com/Premchand006/awesome-embedded-ai-stack/commits/main)
-[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-embedded-ai-stack?style=social)](https://github.com/Premchand006/awesome-embedded-ai-stack/stargazers)
+[![Stars](https://img.shields.io/github/stars/Premchand006/awesome-embedded-ai-stack?style=social)](https://github.com/Premchand006/awesome-embedded-ai-stack)
 
 </div>
 
@@ -57,23 +53,19 @@ Physical AI and Edge AI knowledge is scattered across vendor docs, blog posts, Y
 
 ### 1. Hardware & runtime selection paralysis
 - **Problem**: "TOPS" marketing numbers don't map to real FPS, memory limits aren't obvious, and it's unclear which runtime works on which chip.
-- **Solution**: one-screen comparison tables plus per-vendor pages with caveats. → [Hardware Landscape](hardware-landscape/) · [Runtimes & SDKs](runtimes-and-sdks/)
+- **Solution**: one-screen comparison tables plus per-vendor pages with caveats. → [Hardware Landscape](hardware-landscape/README.md) · [Runtimes & SDKs](runtimes-and-sdks/README.md)
 
 ### 2. The "model on a bench" → "real pipeline" gap
 - **Problem**: tutorials stop at a single inference call; nobody shows the camera → preprocess → inference → postprocess → action pipeline, or how to build a robot perception graph.
-- **Solution**: pipeline patterns and reproducible projects you can run on hardware you can buy today. → [Edge Pipelines](edge-pipelines/) · [Beginner Quick-Wins](beginner-projects/)
+- **Solution**: pipeline patterns and reproducible projects you can run on hardware you can buy today. → [Edge Pipelines](edge-pipelines/README.md) · [Beginner Quick-Wins](beginner-projects/README.md)
 
 ### 3. Following stale, dead-end guides
 - **Problem**: half the tutorials online tell you to buy a Coral or `pip install tflite-runtime` — both effectively dead.
 - **Solution**: a living "what changed" page and a structured learning order. → [Renames & Deprecations](renames-and-deprecations.md) · [Knowledge Roadmap](knowledge-roadmap.md)
 
-**Why care at all?** **Edge AI is roughly a USD 25B market in 2025, projected to reach USD 57–165B by 2030–2035** depending on scope, with computer vision the dominant application and manufacturing the fastest-growing vertical ([sources](industry-landscape/)). You're learning an in-demand skill.
-
----
-
 ## 🧩 What is Physical AI and Edge AI?
 
-*The 60-second mental model before you pick hardware. Full version in [concepts-and-definitions](concepts-and-definitions/).*
+*The 60-second mental model before you pick hardware. Full version in [concepts-and-definitions](concepts-and-definitions/README.md).*
 
 - **Cloud AI** — inference in a datacenter. Maximum compute, but higher latency, and data leaves the device.
 - **Edge AI** — inference **on or next to the device** producing the data. Low latency, privacy, bandwidth savings, and it works offline.
@@ -87,39 +79,21 @@ Physical AI and Edge AI knowledge is scattered across vendor docs, blog posts, Y
 - **Bandwidth & cost** — send *insights*, not raw video, to the cloud.
 - **Availability** — it keeps working when the network doesn't.
 
----
-
-## 🚀 Start Here
-
-*New here? Follow these five steps in order.*
-
-Physical AI and Edge AI knowledge is scattered across vendor docs, blog posts, YouTube, and one-off sample repos — each assuming you've already picked *their* stack. This hub answers the questions that actually block newcomers:
-
-- **Which board should I buy?** → [Hardware Landscape](hardware-landscape/)
-- **Which runtime should I use?** → [Runtimes & SDKs](runtimes-and-sdks/)
-- **How do I build a camera → inference pipeline?** → [Edge Pipelines](edge-pipelines/)
-- **What do I learn, and in what order?** → [Knowledge Roadmap](knowledge-roadmap.md)
-- **What can I build *this weekend*?** → [Beginner Quick-Wins](beginner-projects/)
-
-Why care at all? **Edge AI is roughly a USD 25B market in 2025, projected to reach USD 57–165B by 2030–2035** depending on scope, with computer vision the dominant application and manufacturing the fastest-growing vertical ([sources](industry-landscape/)). You're learning an in-demand skill.
-
----
-
 ## 🚀 Start Here
 
 | Step | Do this | Go to |
 |------|---------|-------|
-| **1. Understand the terms** | Cloud vs Edge vs Embedded vs Physical AI — 10-minute read | [concepts-and-definitions →](concepts-and-definitions/) |
-| **2. Pick a path** | Use the decision tree to choose your first board | [getting-started →](getting-started/) |
-| **3. Get a quick win** | Run a real camera-detection demo on hardware you can buy today | [beginner-projects →](beginner-projects/) |
+| **1. Understand the terms** | Cloud vs Edge vs Embedded vs Physical AI — 10-minute read | [concepts-and-definitions →](concepts-and-definitions/README.md) |
+| **2. Pick a path** | Use the decision tree to choose your first board | [getting-started →](getting-started/README.md) |
+| **3. Get a quick win** | Run a real camera-detection demo on hardware you can buy today | [beginner-projects →](beginner-projects/README.md) |
 | **4. Follow the roadmap** | Beginner → advanced, phase by phase | [knowledge-roadmap →](knowledge-roadmap.md) |
 | **5. Go deep** | Explore runtimes, pipelines, robotics, and the market | sections below |
 
-**Three recommended tracks** (full detail in [getting-started](getting-started/)):
+**Three recommended tracks** (full detail in [getting-started](getting-started/README.md)):
 
 - 🟢 **Maker / lowest cost** → Raspberry Pi 5 + AI HAT+ (Hailo). [Quick-win →](beginner-projects/pi5-hailo-live-detection.md)
 - 🟡 **Prototyping / robotics** → NVIDIA Jetson Orin Nano Super. [Quick-win →](beginner-projects/jetson-yolo-detection.md)
-- 🔴 **Advanced / humanoid & multi-sensor** → Jetson AGX Thor + Isaac ROS. [Robotics →](robotics-and-ros2/)
+- 🔴 **Advanced / humanoid & multi-sensor** → Jetson AGX Thor + Isaac ROS. [Robotics →](robotics-and-ros2/README.md)
 
 ---
 
@@ -142,7 +116,7 @@ Detailed, link-by-link version: **[knowledge-roadmap.md →](knowledge-roadmap.m
 
 ## 🧭 Hardware at a glance
 
-A starter comparison. Full per-vendor pages, caveats, and buying advice live in **[hardware-landscape/](hardware-landscape/)**. TOPS are vendor maxima at the stated precision — real throughput differs; always check independent FPS/token benchmarks.
+A starter comparison. Full per-vendor pages, caveats, and buying advice live in **[hardware-landscape/](hardware-landscape/README.md)**. TOPS are vendor maxima at the stated precision — real throughput differs; always check independent FPS/token benchmarks.
 
 | Platform | AI perf (vendor) | Power | On-board RAM | GenAI-capable? | Approx. price | Best for |
 |---|---|---|---|---|---|---|
@@ -164,7 +138,7 @@ A starter comparison. Full per-vendor pages, caveats, and buying advice live in 
 
 ## ⚙️ Which runtime should I use?
 
-Full matrix and per-runtime pages in **[runtimes-and-sdks/](runtimes-and-sdks/)**.
+Full matrix and per-runtime pages in **[runtimes-and-sdks/](runtimes-and-sdks/README.md)**.
 
 | If your target is… | Reach for | Notes |
 |---|---|---|
@@ -193,7 +167,7 @@ awesome-embedded-ai-stack/
 ├── beginner-projects/          # reproducible quick-wins with a buy-list per project
 ├── deployment-and-optimization/# export, quantization, profiling, cloud→edge
 ├── industry-landscape/         # market size, vendor map, applications by vertical
-├── awesome-resources/          # the curated "awesome list" core (docs, repos, videos, papers)
+├── awesome-resources/          # curated cross-cutting resources (docs, repos, videos, papers)
 ├── diagrams/                   # architecture & roadmap diagrams
 ├── knowledge-roadmap.md        # beginner → advanced learning path
 ├── renames-and-deprecations.md # what changed in 2024–2026 (read this!)
@@ -202,16 +176,16 @@ awesome-embedded-ai-stack/
 
 ### Explore by section
 
-- 🏁 **[Getting Started](getting-started/)** — pick your first board with a decision tree.
-- 🧩 **[Concepts & Definitions](concepts-and-definitions/)** — the vocabulary, done right.
-- 🔌 **[Hardware Landscape](hardware-landscape/)** — every major platform, with caveats.
-- ⚙️ **[Runtimes & SDKs](runtimes-and-sdks/)** — ONNX Runtime, LiteRT, TensorRT, OpenVINO, TVM.
-- 🎥 **[Edge Pipelines](edge-pipelines/)** — GStreamer, DeepStream, ROS 2 perception.
-- 🤖 **[Robotics & ROS 2](robotics-and-ros2/)** — Isaac ROS, NITROS, Physical AI framing.
-- 🛠️ **[Beginner Projects](beginner-projects/)** — weekend quick-wins on real hardware.
-- 🚢 **[Deployment & Optimization](deployment-and-optimization/)** — quantize, profile, ship.
-- 📈 **[Industry Landscape](industry-landscape/)** — market data and where it's heading.
-- ⭐ **[Awesome Resources](awesome-resources/)** — the curated link collection.
+- 🏁 **[Getting Started](getting-started/README.md)** — pick your first board with a decision tree.
+- 🧩 **[Concepts & Definitions](concepts-and-definitions/README.md)** — the vocabulary, done right.
+- 🔌 **[Hardware Landscape](hardware-landscape/README.md)** — every major platform, with caveats.
+- ⚙️ **[Runtimes & SDKs](runtimes-and-sdks/README.md)** — ONNX Runtime, LiteRT, TensorRT, OpenVINO, TVM.
+- 🎥 **[Edge Pipelines](edge-pipelines/README.md)** — GStreamer, DeepStream, ROS 2 perception.
+- 🤖 **[Robotics & ROS 2](robotics-and-ros2/README.md)** — Isaac ROS, NITROS, Physical AI framing.
+- 🛠️ **[Beginner Projects](beginner-projects/README.md)** — weekend quick-wins on real hardware.
+- 🚢 **[Deployment & Optimization](deployment-and-optimization/README.md)** — quantize, profile, ship.
+- 📈 **[Industry Landscape](industry-landscape/README.md)** — market data and where it's heading.
+- ⭐ **[Awesome Resources](awesome-resources/README.md)** — the curated link collection.
 
 ---
 

@@ -66,15 +66,4 @@ Only currently-maintained, authoritative, or high-signal resources are listed. S
 - [rcmalli/awesome-edge-ai](https://github.com/rcmalli/awesome-edge-ai) - Edge-AI tools (verify currency; some entries are dated).
 - [tobymcclean/awesome-edge-ai](https://github.com/tobymcclean/awesome-edge-ai) - Edge-AI references (verify currency).
 
-## Suggested GitHub topics
-Add these in **Settings → Topics** so the repo is discoverable (and to qualify for the [Awesome](https://awesome.re) index):
-
-```
-awesome  physical-ai  edge-ai  embedded-ai  tinyml
-jetson  hailo  openvino  onnx  ros2  gstreamer
-edge-computing  computer-vision  robotics  ai-accelerator
-```
-
----
-
 *Found a great resource — or a dead link? [Open a PR](../CONTRIBUTING.md). Curation only stays useful if it stays current.*

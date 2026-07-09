@@ -1,5 +1,16 @@
+# Internal / maintainer-only — not for the public repo
+MANUAL-STEPS.md
+
 # Link checker cache
 .lycheecache
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
 
 # Node (awesome-lint / markdownlint)
 node_modules/

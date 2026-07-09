@@ -1,5 +1,12 @@
 # Renames & Deprecations (2024–2026)
 
+> [!IMPORTANT]
+> **This is the canonical Renames & Deprecations page.** The companion repos
+> [`awesome-edge-ai`](https://github.com/Premchand006/awesome-edge-ai) and
+> [`awesome-physical-ai`](https://github.com/Premchand006/awesome-physical-ai) link here instead of
+> keeping their own copies, so there is a single source of truth to maintain. Found something stale?
+> Fix it here.
+
 The edge-AI ecosystem renamed, deprecated, and discontinued a lot between 2024 and 2026. Following an old tutorial can send you down a dead end — buying an abandoned accelerator, or `pip install`-ing a package that no longer exists. This page is the cheat-sheet. **Verify against the linked official source before acting**; dates are when the change was announced/confirmed.
 
 > **How to use this page:** before buying hardware or choosing a runtime, scan the relevant row. If a guide you're following predates the change, treat its product names and install commands with suspicion.
